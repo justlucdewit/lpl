@@ -1,10 +1,9 @@
 <html>
     <head>
+        <link rel="stylesheet" href="styles/mainstyle.css">
     </head>
 
     <body>
-        <?php
-            echo "welcome to Lukes log"
-        ?>
+        <?php require("includes/header.php");?>
     </body>
 </html>

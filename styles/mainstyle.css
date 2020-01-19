@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: lime;
+  margin: 20px;
+  padding: 5px;
+}
+
+body header {
+  border: 1px solid lime;
+}
+
+body header h1 {
+  text-align: center;
+}
+
+body header #belowtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+body header #belowtitle img {
+  width: 10vw;
+  height: 10vw;
+  border: 2px solid lime;
+  border-radius: 50%;
+}
+
+body header #belowtitle #quote {
+  width: 10vw;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=mainstyle.css.map */
