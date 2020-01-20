@@ -1,10 +1,13 @@
 //setting variables
-$primaryBGColor : rgb(0, 0, 0);
+$primaryBGColor : rgb(10, 10, 10);
 $primaryFGColor : rgb(0, 255, 0);
-$secondaryFGColor : rgb(0, 60, 0);
+$secondaryFGColor : rgb(0, 80, 0);
+$ternaryFGColor : rgb(0, 160, 0);
 
-$primaryFontSize : 4vw;
-$secondaryFontSize : 0px;
+$headerFontSize : 4vw;
+$navFontSize : 4vw;
+
+$borderThicness : 4px;
 
 $imageSize: 30vw;
 
@@ -17,10 +20,10 @@ body{
     
     header{
         padding-bottom: 5px;
-        border-bottom: 4px dashed $secondaryFGColor;
+        border-bottom: $borderThicness dashed $secondaryFGColor;
         h1 {
             text-align: center;
-            font-size: $primaryFontSize;
+            font-size: $headerFontSize;
             @media screen and (min-width:750px){
                 font-size: 30px;
             }
@@ -48,16 +51,30 @@ body{
     }
 
     nav{
-        #dropdownbutton{
-            border: 1px solid $primaryFGColor;
-        }
-
         ul{
+            font-size: $navFontSize;
+            @media screen and (min-width:750px){
+                font-size: 30px;
+            }
+
             list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                padding-top: 5px;
+            }
         }
+        /*border-right: $borderThicness dashed $secondaryFGColor;
+        border-left: $borderThicness dashed $secondaryFGColor;*/
+        border-bottom: $borderThicness dashed $secondaryFGColor;
     }
 }
 
 a{
-    color: $primaryFGColor;
+    text-decoration: none;
+    color: $ternaryFGColor;
+    &:hover{
+        text-decoration: underline;
+        color: $primaryFGColor;
+    }
 }

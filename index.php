@@ -8,6 +8,6 @@
         <?php require("includes/header.php");?>
 
         <!--navigation-->
-        <?//php require("includes/navbar.php");?>
+        <?php require("includes/navbar.php");?>
     </body>
 </html>

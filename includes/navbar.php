@@ -1,9 +1,4 @@
 <nav>
-    <div id="dropdownbutton">
-        __<br>
-        __<br>
-        __
-    </div>
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="#">blog</a></li>

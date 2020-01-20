@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #0a0a0a;
   color: lime;
   margin: 20px;
   padding: 5px;
@@ -8,7 +8,7 @@ body {
 
 body header {
   padding-bottom: 5px;
-  border-bottom: 4px dashed #003c00;
+  border-bottom: 4px dashed #005000;
 }
 
 body header h1 {
@@ -49,15 +49,40 @@ body header #belowtitle #quote {
   margin-left: 20px;
 }
 
-body nav #dropdownbutton {
-  border: 1px solid lime;
+body nav {
+  /*border-right: $borderThicness dashed $secondaryFGColor;
+        border-left: $borderThicness dashed $secondaryFGColor;*/
+  border-bottom: 4px dashed #005000;
 }
 
 body nav ul {
+  font-size: 4vw;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 750px) {
+  body nav ul {
+    font-size: 30px;
+  }
+}
+
+body nav ul li {
+  padding-top: 5px;
 }
 
 a {
+  text-decoration: none;
+  color: #00a000;
+}
+
+a:hover {
+  text-decoration: underline;
   color: lime;
 }
 /*# sourceMappingURL=mainstyle.css.map */
