@@ -3,14 +3,23 @@ body {
   color: lime;
   margin: 20px;
   padding: 5px;
+  font-family: Consolas, monaco, monospace;
 }
 
 body header {
-  border: 1px solid lime;
+  padding-bottom: 5px;
+  border-bottom: 4px dashed #003c00;
 }
 
 body header h1 {
   text-align: center;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 750px) {
+  body header h1 {
+    font-size: 30px;
+  }
 }
 
 body header #belowtitle {
@@ -27,8 +36,10 @@ body header #belowtitle {
 }
 
 body header #belowtitle img {
-  width: 10vw;
-  height: 10vw;
+  max-width: 200px;
+  max-height: 200px;
+  width: 30vw;
+  height: 30vw;
   border: 2px solid lime;
   border-radius: 50%;
 }
@@ -36,5 +47,17 @@ body header #belowtitle img {
 body header #belowtitle #quote {
   width: 10vw;
   margin-left: 20px;
+}
+
+body nav #dropdownbutton {
+  border: 1px solid lime;
+}
+
+body nav ul {
+  list-style: none;
+}
+
+a {
+  color: lime;
 }
 /*# sourceMappingURL=mainstyle.css.map */

@@ -4,6 +4,10 @@
     </head>
 
     <body>
+        <!--header-->
         <?php require("includes/header.php");?>
+
+        <!--navigation-->
+        <?//php require("includes/navbar.php");?>
     </body>
 </html>

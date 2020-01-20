@@ -1,17 +1,29 @@
 //setting variables
 $primaryBGColor : rgb(0, 0, 0);
 $primaryFGColor : rgb(0, 255, 0);
+$secondaryFGColor : rgb(0, 60, 0);
+
+$primaryFontSize : 4vw;
+$secondaryFontSize : 0px;
+
+$imageSize: 30vw;
 
 body{
     background-color: $primaryBGColor;
     color: $primaryFGColor;
     margin: 20px;
     padding: 5px;
+    font-family: Consolas, monaco, monospace;
     
     header{
-        border: 1px solid $primaryFGColor;
+        padding-bottom: 5px;
+        border-bottom: 4px dashed $secondaryFGColor;
         h1 {
             text-align: center;
+            font-size: $primaryFontSize;
+            @media screen and (min-width:750px){
+                font-size: 30px;
+            }
         }
         #belowtitle{
             display: flex;
@@ -20,8 +32,10 @@ body{
             margin-bottom: 10px;
 
             img{
-                width: 10vw;
-                height:10vw;
+                max-width: 200px;
+                max-height: 200px;
+                width: $imageSize;
+                height: $imageSize;
                 border: 2px solid $primaryFGColor;
                 border-radius: 50%;
             }
@@ -32,4 +46,18 @@ body{
             }
         }
     }
+
+    nav{
+        #dropdownbutton{
+            border: 1px solid $primaryFGColor;
+        }
+
+        ul{
+            list-style: none;
+        }
+    }
+}
+
+a{
+    color: $primaryFGColor;
 }
