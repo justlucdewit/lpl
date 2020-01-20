@@ -24,7 +24,7 @@ body{
         h1 {
             text-align: center;
             font-size: $headerFontSize;
-            @media screen and (min-width:750px){
+            @media screen and (min-width:600px){
                 font-size: 30px;
             }
         }
@@ -67,6 +67,11 @@ body{
         /*border-right: $borderThicness dashed $secondaryFGColor;
         border-left: $borderThicness dashed $secondaryFGColor;*/
         border-bottom: $borderThicness dashed $secondaryFGColor;
+        @media screen and (max-width:750px){
+            ul{
+                display: block;
+            }
+        }
     }
 }
 

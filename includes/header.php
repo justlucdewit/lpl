@@ -7,7 +7,8 @@
         "we live in an simulation", "where is the missing semicolon?", "if it works, dont touch it",
         "c# = microsoft java", "python 4 when?", "python is an above c level language", "10000111100101100",
         "34210", "b33p", "a session is something you can sit on", "it works on my machine",
-         "screaming in bytes", "//TODO: remove this comment"];
+        "screaming in bytes", "//TODO: remove this comment", "THE SERVERS ARE ON FIRE!", 
+        "PHPoggers for the win"];
 
         $quote = $quotes[array_rand($quotes, 1)];
     ?>
