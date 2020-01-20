@@ -57,7 +57,7 @@ body{
                 font-size: 30px;
             }
 
-            list-style: none;
+            list-style: block;
             display: flex;
             justify-content: space-evenly;
             li{
@@ -67,9 +67,9 @@ body{
         /*border-right: $borderThicness dashed $secondaryFGColor;
         border-left: $borderThicness dashed $secondaryFGColor;*/
         border-bottom: $borderThicness dashed $secondaryFGColor;
-        @media screen and (max-width:750px){
+        @media screen and (min-width:750px){
             ul{
-                display: block;
+                display: flex;
             }
         }
     }
