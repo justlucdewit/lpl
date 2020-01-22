@@ -10,5 +10,8 @@
 
         <!--navigation-->
         <?php require("includes/navbar.php");?>
+
+        <!--main content-->
+        <?php require("includes/home.php");?>
     </body>
 </html>

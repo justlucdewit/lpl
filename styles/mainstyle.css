@@ -58,9 +58,6 @@ body nav {
 body nav ul {
   font-size: 4vw;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -76,8 +73,17 @@ body nav ul li {
   padding-top: 5px;
 }
 
-@media screen and (max-width: 750px) {
-  body nav ul {
+@media only screen and (min-width: 750px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-right: 4px dashed #005000;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav ul {
     display: block;
   }
 }
