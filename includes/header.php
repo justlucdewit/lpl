@@ -9,7 +9,8 @@
         "10000111100101100", "34210", "b33p", "a session is something you can sit on",
         "it works on my machine", "screaming in bytes", 
         "//TODO: remove this comment", "THE SERVERS ARE ON FIRE!", 
-        "PHPoggers for the win", "do you know da wei", ""];
+        "PHPoggers for the win", "do you know da wei", "i need more money, i should ask for \"arrays\"",
+        ];
 
         $quote = $quotes[array_rand($quotes, 1)];
     ?>

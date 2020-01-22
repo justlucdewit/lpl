@@ -73,16 +73,28 @@ body{
 
 //desktop
 @media only screen and (min-width:750px){
-    nav ul{
-        display: flex;
-        border-right: $borderThicness dashed $secondaryFGColor;
+    nav{
+        ul{
+            display: flex;
+        }
     }
 }
 
 //mobile
 @media only screen and (max-width:750px){
-    nav ul{
-        display: block;
+    nav{
+        ul{
+            
+            display: block;
+            li{
+                width: fit-content;
+                padding-right: 10px;
+            }
+            width: fit-content;
+            padding: 0px;
+        }
+        width: fit-content;
+        border-right: $borderThicness dashed $secondaryFGColor;
     }
 }
 
