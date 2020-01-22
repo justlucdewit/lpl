@@ -3,7 +3,7 @@ body {
   color: lime;
   margin: 20px;
   padding: 5px;
-  font-family: Consolas, monaco, monospace;
+  font-family: fixedsys, Consolas, monospace;
 }
 
 body header {

@@ -13,5 +13,8 @@
 
         <!--main content-->
         <?php require("includes/home.php");?>
+
+        <!--footer-->
+        <?php require("includes/footer.php");?>
     </body>
 </html>
